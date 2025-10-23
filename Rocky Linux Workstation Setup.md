@@ -1,21 +1,21 @@
-# Installing Rocky Linux & Obtaining Sample Files
+# Installing Rocky Linux Linux & Obtaining Sample Files
 
-During this TTT, we’ll be installing two (2) different Linux distributions. For the first part of this TTT, we’ll use the latest Rocky Linux distribution. 
+During this TTT, we’ll be installing two (2) different Linux distributions. For the first part of this TTT, we’ll use the latest Rocky Linux Linux distribution. 
 
-1. On your Windows or macOS computer, download the ISO image for Rocky Linux Workstation for your architecture (x86/ARM) from https://rockylinux.org/
+1. On your Windows or macOS computer, download the ISO image for Rocky Linux Workstation for your architecture (x86/ARM) from https://Rocky Linuxlinux.org/
 2. Install a native installation of Rocky Linux on bare metal. This will save you the headaches of running and configuring a virtual machine and is a more realistic experience.
    - For macOS on the Apple Silicon (ARM) platform, you can use [UTM](https://mac.getutm.app/), [Oracle VirtualBox](https://www.virtualbox.org/), or [VMWare Fusion](https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion). 
    - For macOS on the x86 platform, you can use [Oracle Virtualbox](https://www.virtualbox.org/) or [VMWare Fusion](https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion).
    - For Windows on the x86 or Snapdragon (ARM) platform, you can use [Oracle Virtualbox](https://www.virtualbox.org/), [VMWare Workstation](https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion). 
    - Refer to the free documentation on the hypervisor website to learn how to create a virtual machine using the hypervisor software.
-3. In your virtualization software, create a new virtual machine (VM) called Fedora Workstation. This VM should have:
+3. In your virtualization software, create a new virtual machine (VM) called Rocky Linux Workstation. This VM should have:
    - 4GB of memory (not dynamically allocated)
    - A network connection via the network interface in your computer that provides Internet access – using an external virtual switch (Hyper-V) or bridged mode (VMWare, Oracle VirtualBox, UTM)
    - A 64GB SATA/SAS/SCSI virtual hard disk drive 
-   - The virtual machine DVD drive attached to the ISO image of Fedora Workstation
-4. Start your Fedora Workstation virtual machine. 
-5. Press Enter to test your media and boot Fedora Live. 
-6. Once the graphical desktop has loaded, click ***Install Fedora***.
+   - The virtual machine DVD drive attached to the ISO image of Rocky Linux Workstation
+4. Start your Rocky Linux Workstation virtual machine. 
+5. Press Enter to test your media and boot Rocky Linux Live. 
+6. Once the graphical desktop has loaded, click ***Install Rocky Linux***.
 7. Select ***English (United States)***.      
 8. On the Installation method screen, note your disk name (e.g., sda) and select ***Launch storage editor*** from the ellipsis (...) menu in the upper-right and click ***Launch storage editor***.  
     - Select ***Create partition table*** from the ellipsis menu next to your storage device. 
@@ -30,7 +30,7 @@ During this TTT, we’ll be installing two (2) different Linux distributions. Fo
 9. Click ***Continue***.
 10. Click ***Install***.
 11. Click ***Exit to live desktop*** and use the icon in the upper right to Power Off your system.
-12. In the settings for your virtual machine, remove the Fedora Workstation ISO image from the virtual DVD and start your Fedora Workstation virtual machine.
+12. In the settings for your virtual machine, remove the Rocky Linux Workstation ISO image from the virtual DVD and start your Rocky Linux Workstation virtual machine.
 13. On the first boot after installation, you must complete a Welcome wizard - make the following selections when prompted:
     - English (US) keyboard
     - Disable Location Services and Automatic Problem Reporting
@@ -44,4 +44,4 @@ During this TTT, we’ll be installing two (2) different Linux distributions. Fo
 18. Type `su - root` and press Enter. 
     - Supply the root user’s password of Secret555 when prompted. 
     - Type `git clone https://github.com/jasoneckert/classfiles.git` and press Enter. 
-    - Type `poweroff` to shut down your Fedora virtual machine.
+    - Type `poweroff` to shut down your Rocky Linux virtual machine.
